@@ -1,6 +1,8 @@
 import java.util.Stack;
+
+
 public class Convertidor {
-    
+
     public static void decimalABinario(int numero) {
 
         Stack<Integer> pila = new Stack<>();
