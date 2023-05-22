@@ -1,5 +1,6 @@
 #Las listas en python no son lo mismo que listas en estructura de datos
-#LISTAS
+#LISTAS /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 lista = []
 
 print(type (lista))
@@ -34,7 +35,7 @@ clear: elimina todos los elemnetos de una lista "se recomienda usarlo cuando se 
 copy: permite copiar los datos de una variable
 count: permite contar cuantas veces existe un elemento en una lista
 len: da la cantidad de valored que hay en una lista
-
+index: da la posicion dentro de la lista de la variable que pongamos
 """
 
 print(lista2[3])
@@ -65,4 +66,76 @@ lista3.sort()                               #para usar este metodo debemos usar 
 print(lista3)
 
 
-#Tuplas
+#Tuplas ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+"""
+Una dupla se utiliza las () parentesis
+las tuplas son tipo de dato compuesto no modificable
+"""
+
+tupla = ()
+print(type(tupla))
+
+"""
+Esto no se puede hacer:
+tupla.append("Diego")
+print(tupla)
+"""
+
+tupla2 = ("Juan", "Pedro", "Maria")
+print(tupla2)
+
+print(tupla2.count("Juan"))
+print(tupla2.count("Maria"))
+
+
+print(tupla2.index("Maria"))
+
+# para comentar algo facilmente podemos usar ctrl + k y luego ctrl + c y descomentar es lo mismo pero en vez de c es U
+
+print(tupla2[2])  #usamos corchetes para esto
+print(tupla2[1])
+
+lista = list(tupla2)
+print(type(lista))
+
+lista.append("Mario")
+print(lista)
+
+tupla2 = tuple(lista)
+print(tupla2)
+
+
+
+#Range ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+rango = range(6)
+print(rango)
+
+#Set ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#no puede tener datos duplicados
+#set utiliza llaves
+
+
+set = {2,3,4,5,6,6}
+print(set)
+print(type(set))
+
+
+#Diccionarios ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+cliente001 = {
+    "Nombre" : "Miguel",
+    "Cedula" : 1722824024,
+    "Celular" : "0967355686",
+    "Correo" : "macabrera06@gamil.com"
+}
+
+print(cliente001)
+print(type(cliente001))
+
+
+print(cliente001["Correo"])
+
+#en lugar de usar un indice utilizamos el nombre 
