@@ -33,7 +33,7 @@ if not 10 < 9:
     print("falso")
 
 """
-Input 
+Input: para pedirle al usuario que ingrese un valor
 """
 
 dato = input("Profavor ingrese algo: ")
@@ -45,6 +45,17 @@ if lista.count(dato) > 0:
     print("Esta informacion existe: ", dato)
 else:
     print("Esta informacion no existe: ", dato)
+
+
+#ejercicio de calculadora
+primernumero = input("ingrese el primer numero: ")
+segundonumero = input("ingrese el segundo numero: ")
+
+primernumero = int(primernumero)
+segundonumero = int(segundonumero)
+print(type(primernumero))
+
+print(primernumero + segundonumero)
 
 
 
