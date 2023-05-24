@@ -137,5 +137,27 @@ print(type(cliente001))
 
 
 print(cliente001["Correo"])
+print(cliente001.get("Celular"))
+
+print(len(cliente001))
+
+
+cliente001["EstadoCivil"] = "Viudo"
+print(cliente001)
+
+cliente001.popitem()  #elimina el utimo elemento del diccionario
+print(cliente001)
+
+cliente001.pop("Celular") #elimina el dato que nosotros deseemos
+print(cliente001)
+
+del cliente001["Cedula"]
+print(cliente001)
+
+cliente002 = dict(cliente001)
+print(cliente002)
+print(cliente001)
+
+
 
 #en lugar de usar un indice utilizamos el nombre 
