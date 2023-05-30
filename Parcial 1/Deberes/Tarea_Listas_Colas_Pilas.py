@@ -122,7 +122,7 @@ while not cola.vacia():
 
 #EJERCICIO 5: Verificar si una lista es simétrica
 
-def es_simetrica(lista):
+def simetrica(lista):
     pila = Pila()
     longitud = len(lista)
     mitad = longitud // 2
@@ -143,13 +143,13 @@ def es_simetrica(lista):
 
 # Ejemplo de uso:
 lista3 = [1, 2, 3, 2, 1]
-if es_simetrica(lista3):
+if simetrica(lista3):
     print("La lista es simétrica.")
 else:
     print("La lista no es simétrica.")
 
 lista4 = [1, 2, 3, 4, 5]
-if es_simetrica(lista4):
+if simetrica(lista4):
     print("La lista es simétrica.")
 else:
     print("La lista no es simétrica.")
