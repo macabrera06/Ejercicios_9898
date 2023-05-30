@@ -22,7 +22,7 @@ def ordenadaCorrectamente(lista):
     return True     
 
 
-#Ejemplo de uso:
+
 mi_lista = [1, 2, 3, 4, 5]
 print(ordenadaCorrectamente(mi_lista))
 
@@ -46,7 +46,7 @@ class Pila:
             return None  # Si la pila está vacía, retorna None
         return self.items.pop()  # Retira el elemento del final de la lista y lo retorna
 
-# Ejemplo de uso:
+
 pila = Pila()
 pila.insertar(1)
 pila.insertar(2)
@@ -59,9 +59,7 @@ while not pila.vacia():
 
 #EJERCICIO 3: Verificar si una palabra es un palíndromo utilizando una pila
 
-
 # Utilizamos la clase pila del ejercicio 2
-
 def es_palindromo(palabra):
     pila = Pila()
     for letra in palabra:
@@ -74,7 +72,7 @@ def es_palindromo(palabra):
     
     return palabra == palabra_invertida  # Compara la palabra original con la invertida
 
-# Ejemplo de uso:
+
 palabra = "oso"
 if es_palindromo(palabra):
     print(f"{palabra} es un palíndromo.")
@@ -104,10 +102,10 @@ class Cola:
     
     def eliminar(self):
         if self.vacia():
-            return None  # Si la cola está vacía, retorna None
+            return None  # Si la cola está vacía, retorna 
         return self.items.pop(0)  # Retira el elemento del inicio de la lista y lo retorna
 
-# Ejemplo de uso:
+
 cola = Cola()
 cola.insertar(1)
 cola.insertar(2)
@@ -122,6 +120,7 @@ while not cola.vacia():
 
 #EJERCICIO 5: Verificar si una lista es simétrica
 
+# Utilizamos la clase pila del ejercicio 2
 def simetrica(lista):
     pila = Pila()
     longitud = len(lista)
@@ -131,8 +130,7 @@ def simetrica(lista):
     for i in range(mitad):
         pila.insertar(lista[i])
 
-    # Compara los elementos de la segunda mitad de la lista con los desapilados
-    # de la pila en orden inverso
+    # Compara los elementos de la segunda mitad de la lista con los desapilados de la pila en orden inverso
     for i in range(mitad, longitud):
         elemento_pila = pila.eliminar()
 
@@ -141,7 +139,7 @@ def simetrica(lista):
 
     return True
 
-# Ejemplo de uso:
+
 lista3 = [1, 2, 3, 2, 1]
 if simetrica(lista3):
     print("La lista es simétrica.")
