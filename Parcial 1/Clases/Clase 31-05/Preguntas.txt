@@ -1,0 +1,48 @@
+UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE 
+DEPARTAMENTO DE CIENCIAS COMPUTACIONALES
+ESTRUCTURA DE DATOS 
+
+MIGUEL CABRERA 
+31/05/2023
+9898
+
+
+
+Responde las siguientes preguntas teóricas:
+
+a) ¿Qué es una Lista? ¿Cuál es su principal característica?
+
+    Es una estructura de datos que almacena y ordena datos del tipo que se necesite de manera secuencial, su principal caracteristica es su 
+    facil acceso y modificacion a los datos dentro de ella mediante su posicion dentro de la lista.
+
+b) Menciona al menos dos operaciones básicas que se pueden realizar con Pilas.
+
+    Dentro de las listas tenemos la operaciones:
+
+    *Apilar: sirve para ingresar un valor dentro de la lista en el final de ella
+    *Desapilar: elimina el ultimo elemento de la lista 
+    *observar: permite observar el valor superior de la lista sin modificarlo.
+    *Verificar si esta vacia: Esta operacion da un valor booleano que responde si la lisat contiene valores o si esta vacia.
+
+c) ¿Qué es una Cola de prioridad y en qué se diferencia de una Cola tradicional?
+
+    Una cola de prioridad es una cola donde se asigan un orden especifico de prioridad como su nombre indica, donde se organiza de mayor prioridad a menor prioridad,
+    a diferencia del la cola tradicional o FIFO donde el primero en entrar sale primero, aqui su orden es mediante su prioridad.
+
+
+
+Responde las siguientes preguntas prácticas:
+a) ¿Cuál es la complejidad temporal de la operación de búsqueda en una Lista?
+
+    la complejidad temporal es debido a que cuando mandamos a buscar un valor dentro de una lista que no se encuentra ordenada va tardarse una cantidad de tiempo igual al tamaño de la lista, mientras
+    que de tener la lista ordenada su tiempo de busqueda sera menor dependiendo de como haya sido ordenada.
+
+
+b) ¿Cuál es la estructura de datos adecuada para implementar una Pila? ¿Por qué?
+
+    LA estructura de datos mas adecuada para implementar una pila es las listas debido a su naturleza de LIFO, donde el ultimo que entra es el primo en salir
+
+c) ¿Cómo se puede implementar una Cola utilizando una Lista en Python?
+
+    Podemos utilizar listas y mediante los metodos appened podemos agregar elementos a la cola y con el metodo pop(0) podemos eliminar el dato inicial de la lsiat con la que estamos trabajndo dentro
+    de la clase cola.
