@@ -25,7 +25,8 @@ def ordenadaCorrectamente(lista):
 
 mi_lista = [1, 2, 3, 4, 5]
 print(ordenadaCorrectamente(mi_lista))
-
+mi_lista = [4 ,5, 1, 3, 2]
+print(ordenadaCorrectamente(mi_lista))
 
 
 #EJERCICIO 2: Implementar una pila utilizando una lista
