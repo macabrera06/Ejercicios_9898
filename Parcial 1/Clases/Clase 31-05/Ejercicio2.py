@@ -13,17 +13,17 @@ MIGUEL CABRERA
 
 class Pila:
     def __init__(self):
-        self.elementos = []
+        self.elementos = [] #Aqui estamos asignado que dentro de la pila usaremos una lista para guardar los elementos
 
     def apilar(self, elemento):
-        self.elementos.append(elemento)
+        self.elementos.append(elemento)  #con esta funcion appened podemos agregar elementos a la lista de la pila
 
     def desapilar(self):
-        if not self.vacia():
-            return self.elementos.pop()
+        if not self.vacia():   #Verificamos que la pila tenga datos dentro de su lista
+            return self.elementos.pop() #Eliminamos el elemneto de la ultima posicion de la lista
     
     def vacia(self):
-        return len(self.elementos) == 0 
+        return len(self.elementos) == 0  #Verifica si tiene elementos al contavilizar y comparar si es igual a 0
 
 
 # Realizamos las operacion apilar y desapilar
